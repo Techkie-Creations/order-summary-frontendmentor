@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.card {
+    width: 40%;
+    margin: 2rem auto;
+    background-color: white;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 1.1rem 1.1rem 0 0;
+}
+
+.card .info {
+    text-align: center;
+    padding: 2rem 2.7rem;
+}
+
+.card .info h1 {
+    margin-top: 0;
+    font-weight: 800;
+}
+
+.card .info p {
+    color: hsl(224, 23%, 55%);
+}
+
+.card .info .plan {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 1.2rem;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0 1rem 0;
+    background-color: hsl(225, 100%, 98%);
+}
+
+.card .info .plan .align {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.card .info .plan .icon {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.card .info .plan .align .sub {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: .3rem;
+    padding: 0;
+    margin: 0;
+}
+
+.card .info .plan .align .sub .bold {
+    font-weight: 800;
+    color: black;
+}
+
+.card .info .plan .align a:hover  {
+    opacity: .8;
+}
+
+.card .info button {
+    display: block;
+    width: 100%;
+    padding: 1.2rem;
+    margin-top: .5rem;
+    cursor: pointer;
+    border: none;
+    font-size: large;
+}
+
+.card .info button.a {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    box-shadow: 0 5px 5px hsl(245, 75%, 52%);
+}
+
+.card .info button.a:hover {
+    opacity: .7;
+}
+
+.card .info button.b {
+    background-color: transparent;
+}
+
+.card .info button.b:hover {
+    font-weight: 800;
+}
+
+.card,
+.card .info .plan, 
+.card .info button {
+    border-radius: 1.1rem;
+}
+
+.attribution {
+    text-align: center;
+    font-size: .8rem;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: hsl(245, 75%, 52%);
+}
+
+.attribution a:hover {
+    color: darkred;
+}
+
+.attribution p {
+    font-weight: 800;
+}
+
+@media screen and (max-width: 950px) {
+    .card {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: 90%;
+    }
+
+    .card .info {
+        padding: 1rem 1.7rem;
+    }
+
+    .card .info .plan {
+        padding: 1rem 1rem;
+        gap: .7rem;
+    }
+}
